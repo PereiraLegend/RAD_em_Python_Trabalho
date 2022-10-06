@@ -43,4 +43,44 @@ while n == 1:
         Arquivo.write("|Conta: ")
         conta_bd = Arquivo.write(str(input("Informe a sua Conta: ")) + "\n")
 
-Conversar em @Pereirapro
+        # Parte da Conta
+
+        Arquivo.write("|Agência: ")
+        agencia_bd = Arquivo.write(str(input("Informe a sua Agência: ")) + "\n")
+
+        Arquivo.write("|Número: ")
+        numero_bd = Arquivo.write(str(input("Informe o seu Número: ")) + "\n")
+
+        Arquivo.write("|Saldo: ")
+        saldo_bd = Arquivo.write(str(input("Informe o seu Saldo: ")) + "\n")
+
+        Arquivo.write("|Gerente: ")
+        gerente_bd = Arquivo.write(str(input("Informe o seu Gerente: ")) + "\n")
+
+        Arquivo.write("|Titular: ")
+        titular_bd = Arquivo.write(str(input("Informe a sua Titular: ")) + "\n")
+
+        Arquivo.close()
+
+    if selecionar == 2:
+        print("====================================================================")
+        print("|Informe o arquivo a ser Aberto/Editado: ")
+        try:
+            with open(input("|Informe o nome do arquivo a ser aberto [Obs.: Insira o formato do arquivo ex.: .txt no final]: "), "r+") as abrir: # Colocar para criar arquivos
+                for Abrir in abrir:
+                    print(Abrir)
+        except:
+            print("Insira corretamente o nome do arquivo com o .txt no final!")
+
+    if selecionar == 3:
+
+        print("====================================================================")
+        # nomeArquivo = str(input("Informe o nome do arquivo a ser criado: "))
+        Arquivo = open(str(input("|Informe o nome do arquivo a ser alterado [Obs.: Insira o formato do arquivo ex.: .txt no final]: ")),"w")  # Colocar para criar arquivos
+        # print(Arquivo.read()
+
+        print("====================================================================")
+        print("|--Insira as suas Informações --")
+
+        # Parte da Pessoa a ser editada
+
