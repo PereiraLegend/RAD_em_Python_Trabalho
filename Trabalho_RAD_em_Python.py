@@ -84,3 +84,45 @@ while n == 1:
 
         # Parte da Pessoa a ser editada
 
+Arquivo.write("===============================")
+        Arquivo.write("|Cpf: ")
+        Cpf = Arquivo.write(str(input("Informe seu cpf: ")) + "\n")
+
+        Arquivo.write("|Nome: ")
+        Nome = Arquivo.write(str(input("Informe o seu nome: ")) + "\n")
+
+        Arquivo.write("|Sobrenome: ")
+        Sobrenome = Arquivo.write(str(input("Informe o seu sobrenome: ")) + "\n")
+
+        Arquivo.write("|Idade: ")
+        Idade = Arquivo.write(str(input("Informe a sua Idade: ")) + "\n")
+
+        Arquivo.write("|Conta: ")
+        Conta = Arquivo.write(str(input("Informe a sua Conta: ")) + "\n")
+
+        # Parte da Conta a ser editada
+
+        Arquivo.write("|Agência: ")
+        agencia_bd = Arquivo.write(str(input("Informe a sua Agência: ")) + "\n")
+
+        Arquivo.write("|Número: ")
+        numero_bd = Arquivo.write(str(input("Informe o seu Número: ")) + "\n")
+
+        Arquivo.write("|Saldo: ")
+        saldo_bd = Arquivo.write(str(input("Informe o seu Saldo: ")) + "\n")
+
+        Arquivo.write("|Gerente: ")
+        gerente_bd = Arquivo.write(str(input("Informe o seu Gerente: ")) + "\n")
+
+        Arquivo.write("|Titular: ")
+        titular_bd = Arquivo.write(str(input("Informe a sua Titular: ")) + "\n")
+
+        Arquivo.close()
+
+    if selecionar == 4:
+        print("====================================================================")
+        try:
+            os.remove(str(input("Informe o nome do arquivo para ser deletado: ")))
+            print("Seu arquivo foi deletado com Sucesso!")
+        except:
+            print("O nome foi escrito de forma incorreta! Digite novamente")
