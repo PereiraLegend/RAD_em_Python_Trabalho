@@ -84,7 +84,7 @@ while n == 1:
 
         # Parte da Pessoa a ser editada
 
-Arquivo.write("===============================")
+        Arquivo.write("===============================")
         Arquivo.write("|Cpf: ")
         Cpf = Arquivo.write(str(input("Informe seu cpf: ")) + "\n")
 
@@ -126,3 +126,9 @@ Arquivo.write("===============================")
             print("Seu arquivo foi deletado com Sucesso!")
         except:
             print("O nome foi escrito de forma incorreta! Digite novamente")
+
+
+    print("====================================================================")
+    n = int(input("|Você deseja voltar ao menu ou  sair? Menu [1] Sair [2]: "))
+
+# banco de dados, procurar função para deletar os arquivos criados e corrigir o erro do loop
